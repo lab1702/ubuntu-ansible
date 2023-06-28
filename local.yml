@@ -1,0 +1,58 @@
+---
+- hosts: localhost
+  connection: local
+  become: true
+
+  tasks:
+  - name: update packages
+    apt:
+      name: "*"
+      state: latest
+      update_cache: true
+
+  - name: install packages
+    package:
+      name:
+        - build-essential
+        - gdebi-core
+        - git
+        - curl
+        - wget
+        - rust-all
+        - golang
+        - python3
+        - python3-pip
+        - python3-setuptools
+        - python3-wheel
+        - python3-venv
+        - python3-virtualenv
+        - docker.io
+        - docker-compose
+        - vim
+        - ripgrep
+        - fd-find
+        - fzf
+        - figlet
+        - dos2unix
+        - graphviz
+        - texlive-full
+        - nvtop
+        - btop
+        - htop
+        - glances
+        - neofetch
+
+  - name: autoremove
+    apt:
+      autoremove: yes
+
+  - name: autoclean
+    apt:
+      autoclean: yes
+
+  - name: add user to groups
+    user:
+      name: "{{ host_user }}"
+      groups:
+        - docker
+      append: yes
