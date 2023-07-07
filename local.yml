@@ -13,6 +13,7 @@
   - name: install packages
     package:
       name:
+        - snapd
         - build-essential
         - gdebi-core
         - git
@@ -38,6 +39,9 @@
         - dos2unix
         - texlive-full
         - btop
+        - htop
+        - nvtop
+        - glances
 
   - name: autoremove
     apt:
