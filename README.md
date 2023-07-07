@@ -1,17 +1,5 @@
 # debian-ansible
 
-## Simple Docker Host Setup
-
-If you plan to do everything in [Docker](https://www.docker.com/) you do not need everything in this [Ansible](https://www.ansible.com/) configuration
-and can simply run this to get pre-requisites installed.
-
-### Docker Host Commands
-
-Run this after installing the OS:
-
-    sudo apt update && sudo apt install -y git vim docker.io docker-compose
-    sudo usermod -a -G docker $USER
-    
 ## Complete Workstation Setup
 
 ### Ansible Commands
