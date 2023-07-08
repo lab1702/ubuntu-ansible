@@ -19,16 +19,14 @@
       pkg:
         - snapd
       state: present
-      when:
-        - ansible_facts['distribution'] == 'Debian'
+    when: ansible_facts['distribution'] == 'Debian'
 
   - name: install ubuntu packages
     apt:
       pkg:
         - ubuntu-restricted-extras
       state: present
-      when:
-        - ansible_facts['distribution'] == 'Ubuntu'
+    when: ansible_facts['distribution'] == 'Ubuntu'
 
   - name: install generic packages
     apt:
