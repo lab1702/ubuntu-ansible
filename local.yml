@@ -4,9 +4,9 @@
   become: true
 
   tasks:
-  - name: Show facts available on the system
-    debug:
-      var: ansible_facts
+#  - name: Show facts available on the system
+#    debug:
+#      var: ansible_facts
 
   - name: update installed packages
     apt:
