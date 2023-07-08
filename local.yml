@@ -59,6 +59,7 @@
         - htop
         - nvtop
         - glances
+      state: present
 
   - name: autoremove packages
     apt:
