@@ -4,27 +4,27 @@
   become: true
 
   tasks:
-  - name: update packages
+  - name: update installed packages
     apt:
       name: "*"
       state: latest
       update_cache: true
 
-  - name: install debian specific packages
-    package:
-      name:
+  - name: install debian packages
+    apt:
+      pkg:
         - snapd
       when: ansible_facts['distribution'] == "Debian"
 
-  - name: install ubuntu specific packages
-    package:
-      name:
+  - name: install ubuntu packages
+    apt:
+      pkg:
         - ubuntu-restricted-extras
       when: ansible_facts['distribution'] == "Ubuntu"
 
-  - name: install packages
-    package:
-      name:
+  - name: install generic packages
+    apt:
+      pkg:
         - build-essential
         - gdebi-core
         - git
@@ -54,11 +54,11 @@
         - nvtop
         - glances
 
-  - name: autoremove
+  - name: autoremove packages
     apt:
       autoremove: yes
 
-  - name: autoclean
+  - name: autoclean packages
     apt:
       autoclean: yes
 
