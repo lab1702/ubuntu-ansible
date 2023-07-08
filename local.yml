@@ -10,10 +10,21 @@
       state: latest
       update_cache: true
 
-  - name: install packages
+  - name: install debian specific packages
     package:
       name:
         - snapd
+      when: ansible_facts['distribution'] == "Debian"
+
+  - name: install ubuntu specific packages
+    package:
+      name:
+        - ubuntu-restricted-extras
+      when: ansible_facts['distribution'] == "Ubuntu"
+
+  - name: install packages
+    package:
+      name:
         - build-essential
         - gdebi-core
         - git
