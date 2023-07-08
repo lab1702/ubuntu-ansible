@@ -16,6 +16,6 @@ Run this to apply the config to your workstation:
 
 To install RStudio Desktop, RStudio Server or Shiny Server, follow instructions at [https://posit.co/](https://posit.co/) to get latest versions.
 
-# Snaps
+## Snaps
 
 After this is installed and rebooted, see [snap-ansible](https://github.com/lab1702/snap-ansible) to install Snap apps.
