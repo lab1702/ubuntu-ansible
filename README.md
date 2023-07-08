@@ -1,6 +1,6 @@
 # debian-ansible
 
-Ansible configuration for Debian and Ubuntu.
+Ansible configuration that can be used with either Debian or Ubuntu.
 
 ## Complete Workstation Setup
 
