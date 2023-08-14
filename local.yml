@@ -32,7 +32,6 @@
     apt:
       pkg:
         - build-essential
-        - gdebi-core
         - git
         - curl
         - wget
@@ -42,10 +41,6 @@
         - python3-wheel
         - python3-venv
         - python3-virtualenv
-        - r-base
-        - r-base-dev
-        - r-cran-*
-        - r-bioc-*
         - docker.io
         - docker-compose
         - vim
