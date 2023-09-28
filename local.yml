@@ -43,6 +43,7 @@
         - python3-virtualenv
         - r-base
         - r-base-dev
+        - r-cran-tidyverse
         - docker.io
         - docker-compose
         - vim
