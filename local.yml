@@ -44,7 +44,6 @@
         - r-base
         - r-base-dev
         - r-cran-*
-        - r-bioc-*
         - docker.io
         - docker-compose
         - vim
