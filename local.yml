@@ -43,7 +43,8 @@
         - python3-virtualenv
         - r-base
         - r-base-dev
-        - r-cran-tidyverse
+        - r-cran-*
+        - r-bioc-*
         - docker.io
         - docker-compose
         - vim
@@ -56,6 +57,7 @@
         - btop
         - htop
         - nvtop
+        - glances
       state: present
 
   - name: autoremove packages
