@@ -44,7 +44,6 @@
         - python3-pandas
         - python3-matplotlib
         - python3-seaborn
-        - python3-statsmodels
         - jupyter
         - r-base
         - r-base-dev
