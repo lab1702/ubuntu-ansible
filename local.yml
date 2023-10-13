@@ -43,7 +43,6 @@
         - python3-virtualenv
         - python3-pandas
         - python3-matplotlib
-        - python3-seaborn
         - jupyter
         - r-base
         - r-base-dev
