@@ -43,7 +43,7 @@
         - python3-virtualenv
         - python3-pandas
         - python3-matplotlib
-        - python3-statsmodel
+        - python3-statsmodels
         - python3-sklearn
         - jupyter
         - r-base
