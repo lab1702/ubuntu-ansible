@@ -45,7 +45,6 @@
         - python3-matplotlib
         - python3-seaborn
         - python3-statsmodels
-        - python3-sklearn
         - jupyter
         - r-base
         - r-base-dev
