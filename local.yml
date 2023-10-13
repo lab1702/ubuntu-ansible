@@ -49,6 +49,7 @@
         - docker.io
         - docker-compose
         - vim
+        - emacs
         - ripgrep
         - fd-find
         - fzf
