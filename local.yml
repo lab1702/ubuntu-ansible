@@ -44,6 +44,8 @@
         - r-base
         - r-base-dev
         - r-cran-*
+        - rust-all
+        - golang
         - docker.io
         - docker-compose
         - vim
