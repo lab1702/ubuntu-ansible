@@ -42,12 +42,6 @@
         - python3-wheel
         - python3-venv
         - python3-virtualenv
-        - python3-pandas
-        - python3-matplotlib
-        - jupyter
-        - r-base
-        - r-base-dev
-        - r-cran-*
         - rust-all
         - golang
         - docker.io
@@ -59,11 +53,8 @@
         - fzf
         - figlet
         - dos2unix
-        - texlive-full
         - btop
-        - htop
         - nvtop
-        - glances
       state: present
 
   - name: autoremove packages
