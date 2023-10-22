@@ -16,7 +16,7 @@ Run this to apply the config to your workstation:
 
 ## R
 
-To install the R language, follow instructions at [https://cloud.r-project.org/bin/linux/ubuntu/](https://cloud.r-project.org/bin/linux/ubuntu/) to get latest versions.
+To install the R language, follow instructions at [https://www.r-project.org/](https://www.r-project.org/) to get latest versions.
 
 ## RStudio
 
