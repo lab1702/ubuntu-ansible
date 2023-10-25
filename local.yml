@@ -42,15 +42,17 @@
         - docker.io
         - docker-compose
         - vim
-        - emacs
         - ripgrep
         - fd-find
         - fzf
         - figlet
+        - graphviz
+        - graphviz-doc
         - dos2unix
         - htop
         - btop
         - nvtop
+        - glances
       state: present
 
   - name: autoremove packages
