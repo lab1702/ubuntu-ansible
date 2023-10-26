@@ -37,6 +37,8 @@
         - git
         - curl
         - wget
+        - r-base
+        - r-base-dev
         - python3-virtualenv
         - rust-all
         - golang
@@ -48,7 +50,6 @@
         - fzf
         - figlet
         - graphviz
-        - graphviz-doc
         - dos2unix
         - htop
         - btop
