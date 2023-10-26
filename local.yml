@@ -50,6 +50,7 @@
         - fzf
         - figlet
         - graphviz
+        - texlive-full
         - dos2unix
         - htop
         - btop
