@@ -32,6 +32,7 @@
     apt:
       pkg:
         - build-essential
+        - fonts-jetbrains-mono
         - cmake
         - git
         - curl
