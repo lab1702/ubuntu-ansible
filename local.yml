@@ -37,26 +37,20 @@
         - git
         - curl
         - wget
-        - r-base
-        - r-base-dev
         - python3-virtualenv
         - rust-all
         - golang
         - docker.io
         - docker-compose
         - vim
-        - emacs
         - ripgrep
         - fd-find
         - fzf
         - figlet
         - graphviz
-        - texlive-full
         - dos2unix
-        - htop
         - btop
         - nvtop
-        - glances
       state: present
 
   - name: autoremove packages
