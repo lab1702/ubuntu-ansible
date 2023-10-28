@@ -38,20 +38,20 @@
         - wget
         - r-base
         - r-base-dev
-        -	libopenblas-base
-        -	libxml2-dev
-        -	libcurl4-openssl-dev
-        -	libssl-dev
-        -	libx11-dev
-        -	libglu1-mesa-dev
-        -	libftgl-dev
-        -	libfontconfig1-dev
-        -	libcairo2-dev
-        -	libgsl-dev
-        -	libudunits2-dev
-        -	libgdal-dev
-        -	libmpfr-dev
-        -	libgmp-dev
+        - libopenblas-base
+        - libxml2-dev
+        - libcurl4-openssl-dev
+        - libssl-dev
+        - libx11-dev
+        - libglu1-mesa-dev
+        - libftgl-dev
+        - libfontconfig1-dev
+        - libcairo2-dev
+        - libgsl-dev
+        - libudunits2-dev
+        - libgdal-dev
+        - libmpfr-dev
+        - libgmp-dev
         - python3-virtualenv
         - rust-all
         - golang
