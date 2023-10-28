@@ -63,6 +63,7 @@
         - elpa-company
         - elpa-htmlize
         - elpa-csv-mode
+        - elpa-yaml-mode
         - ripgrep
         - fd-find
         - fzf
