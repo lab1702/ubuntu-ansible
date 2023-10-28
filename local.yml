@@ -36,20 +36,45 @@
         - git
         - curl
         - wget
+        - r-base
+        - r-base-dev
+        -	libopenblas-base
+        -	libxml2-dev
+        -	libcurl4-openssl-dev
+        -	libssl-dev
+        -	libx11-dev
+        -	libglu1-mesa-dev
+        -	libftgl-dev
+        -	libfontconfig1-dev
+        -	libcairo2-dev
+        -	libgsl-dev
+        -	libudunits2-dev
+        -	libgdal-dev
+        -	libmpfr-dev
+        -	libgmp-dev
         - python3-virtualenv
         - rust-all
         - golang
         - docker.io
         - docker-compose
         - vim
+        - emacs
+        - elpa-ess
+        - elpa-graphviz-dot-mode
+        - elpa-company
+        - elpa-htmlize
+        - elpa-csv-mode
         - ripgrep
         - fd-find
         - fzf
         - figlet
         - graphviz
+        - graphviz-doc
+        - texlive-full
         - dos2unix
         - btop
         - nvtop
+        - glances
       state: present
 
   - name: autoremove packages
