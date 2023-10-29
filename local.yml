@@ -72,6 +72,7 @@
         - elpa-htmlize
         - elpa-csv-mode
         - elpa-yaml-mode
+        - ispell
         - ripgrep
         - fd-find
         - fzf
