@@ -63,6 +63,7 @@
         - nodejs
         - npm
         - node-opener
+        - gnucobol
         - docker.io
         - docker-compose
         - vim
