@@ -60,6 +60,7 @@
         - golang
         - nodejs
         - npm
+        - node-opener
         - docker.io
         - docker-compose
         - vim
