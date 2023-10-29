@@ -54,6 +54,7 @@
         - libgmp-dev
         - libharfbuzz-dev
         - libfribidi-dev
+        - libv8-dev
         - python3-virtualenv
         - rust-all
         - golang
