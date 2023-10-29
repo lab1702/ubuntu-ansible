@@ -55,6 +55,7 @@
         - libharfbuzz-dev
         - libfribidi-dev
         - libv8-dev
+        - libunwind-dev
         - python3-virtualenv
         - rust-all
         - golang
