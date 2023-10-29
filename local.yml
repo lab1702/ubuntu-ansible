@@ -34,6 +34,7 @@
         - build-essential
         - fonts-jetbrains-mono
         - git
+        - cmake
         - curl
         - wget
         - r-base
