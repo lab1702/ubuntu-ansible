@@ -56,8 +56,8 @@
         - libfribidi-dev
         - libv8-dev
         - libunwind-dev
-        - python3-virtualenv
         - python3-venv
+        - python3-virtualenv
         - rust-all
         - golang
         - nodejs
@@ -66,6 +66,7 @@
         - gnucobol
         - gnuplot
         - octave
+        - swi-prolog
         - docker.io
         - docker-compose
         - vim
