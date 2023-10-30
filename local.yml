@@ -64,6 +64,8 @@
         - npm
         - node-opener
         - gnucobol
+        - gnuplot
+        - octave
         - docker.io
         - docker-compose
         - vim
