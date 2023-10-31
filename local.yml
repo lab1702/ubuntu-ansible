@@ -65,6 +65,7 @@
         - node-opener
         - gnucobol
         - gnuplot
+        - pspp
         - octave
         - swi-prolog
         - docker.io
