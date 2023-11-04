@@ -18,6 +18,25 @@ Run this to apply the config to your workstation:
 
 To use OneDrive, follow instructions at [https://github.com/abraunegg/onedrive](https://github.com/abraunegg/onedrive) to configure.
 
+### Quick HOWTO
+
+Initialize:
+
+    onedrive
+
+Initial sync:
+
+    onedrive --synchronize
+
+Enable monitoring:
+
+    sudo systemctl enable onedrive@${USER}.service
+    sudo systemctl start onedrive@${USER}.service
+
+Watch logs:
+
+    sudo journalctl --unit=onedrive@${USER} -f
+
 ## R
 
 To install the R language, follow instructions at [https://www.r-project.org/](https://www.r-project.org/) to get latest versions.
