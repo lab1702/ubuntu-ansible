@@ -14,6 +14,10 @@ Run this to apply the config to your workstation:
 
     sudo ansible-pull -U https://github.com/lab1702/debian-ansible.git --extra-vars "host_user=$USER"
 
+## OneDrive
+
+To use OneDrive, follow instructions at [https://github.com/abraunegg/onedrive](https://github.com/abraunegg/onedrive) to configure.
+
 ## R
 
 To install the R language, follow instructions at [https://www.r-project.org/](https://www.r-project.org/) to get latest versions.
