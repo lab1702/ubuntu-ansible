@@ -6,11 +6,11 @@ Ansible configuration that can be used with either Debian or Ubuntu.
 
 ### Ansible Commands
 
-Run this once after installing the OS:
+#### Run this once after installing the OS
 
     sudo apt update && sudo apt install -y git ansible
 
-Run this to apply the config to your workstation:
+#### Run this to apply the config to your workstation
 
     sudo ansible-pull -U https://github.com/lab1702/debian-ansible.git --extra-vars "host_user=$USER"
 
@@ -20,20 +20,20 @@ To use OneDrive, follow instructions at [https://github.com/abraunegg/onedrive](
 
 ### Quick HOWTO
 
-Initialize:
+#### Initial Authentication
 
     onedrive
 
-Initial sync:
+#### Initial Sync
 
     onedrive --synchronize
 
-Enable monitoring:
+#### Enable Monitoring
 
     sudo systemctl enable onedrive@${USER}.service
     sudo systemctl start onedrive@${USER}.service
 
-Watch logs:
+#### Watch Logs
 
     sudo journalctl --unit=onedrive@${USER} -f
 
