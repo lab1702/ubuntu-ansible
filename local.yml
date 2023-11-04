@@ -87,6 +87,7 @@
         - graphviz-doc
         - texlive-full
         - dos2unix
+        - onedrive
         - btop
         - nvtop
         - glances
