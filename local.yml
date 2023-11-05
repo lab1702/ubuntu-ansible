@@ -91,6 +91,9 @@
         - btop
         - nvtop
         - glances
+        - hercules
+        - herculesstudio
+        - x3270
       state: present
 
   - name: autoremove packages
