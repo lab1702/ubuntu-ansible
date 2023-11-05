@@ -94,6 +94,7 @@
         - hercules
         - herculesstudio
         - x3270
+        - cool-retro-term
       state: present
 
   - name: autoremove packages
