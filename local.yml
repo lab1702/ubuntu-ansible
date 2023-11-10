@@ -72,12 +72,6 @@
         - docker-compose
         - vim
         - emacs
-        - elpa-ess
-        - elpa-graphviz-dot-mode
-        - elpa-company
-        - elpa-htmlize
-        - elpa-csv-mode
-        - elpa-yaml-mode
         - ispell
         - ripgrep
         - fd-find
@@ -89,12 +83,12 @@
         - dos2unix
         - onedrive
         - btop
+        - htop
         - nvtop
         - glances
         - hercules
         - herculesstudio
         - x3270
-        - cool-retro-term
       state: present
 
   - name: autoremove packages
