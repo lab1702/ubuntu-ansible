@@ -72,6 +72,7 @@
         - docker-compose
         - vim
         - emacs
+        - recutils
         - ispell
         - ripgrep
         - fd-find
