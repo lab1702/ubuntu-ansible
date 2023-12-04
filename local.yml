@@ -74,6 +74,7 @@
         - docker-compose
         - vim
         - emacs
+        - links2
         - recutils
         - ispell
         - ripgrep
