@@ -74,6 +74,7 @@
         - docker-compose
         - vim
         - emacs
+        - tmux
         - links2
         - recutils
         - ispell
