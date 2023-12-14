@@ -73,7 +73,9 @@
         - octave
         - swi-prolog
         - docker.io
-        - docker-compose
+        - docker-buildx
+        - docker-clean
+        - docker-compose-v2
         - vim
         - emacs
         - tmux
