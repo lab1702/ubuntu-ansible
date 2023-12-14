@@ -67,7 +67,7 @@
         - node-opener
         - gnucobol
         - hexyl
-        - ghex
+        - bvi
         - gnuplot
         - pspp
         - octave
