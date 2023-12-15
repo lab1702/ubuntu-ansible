@@ -85,6 +85,14 @@
         - ripgrep
         - fd-find
         - fzf
+        - lsd
+        - gdu
+        - ncdu
+        - ranger
+        - speedtest-cli
+        - neofetch
+        - cpufetch
+        - i7z
         - sloccount
         - figlet
         - graphviz
