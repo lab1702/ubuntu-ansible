@@ -90,6 +90,7 @@
         - ncdu
         - ranger
         - mc
+        - rmlint
         - speedtest-cli
         - neofetch
         - cpufetch
