@@ -85,9 +85,11 @@
         - ripgrep
         - fd-find
         - fzf
+        - exa
         - gdu
         - ncdu
         - ranger
+        - mc
         - speedtest-cli
         - neofetch
         - cpufetch
