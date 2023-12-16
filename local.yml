@@ -109,6 +109,7 @@
         - hercules
         - herculesstudio
         - x3270
+        - obs-studio
       state: present
 
   - name: autoremove packages
