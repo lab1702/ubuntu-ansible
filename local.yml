@@ -109,6 +109,7 @@
         - hercules
         - herculesstudio
         - x3270
+        - simh
         - obs-studio
       state: present
 
