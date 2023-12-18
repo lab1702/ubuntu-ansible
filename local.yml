@@ -38,6 +38,8 @@
         - fonts-3270
         - fonts-anonymous-pro
         - fonts-proggy
+        - fonts-inconsolata
+        - fonts-hack
         - git
         - cmake
         - curl
