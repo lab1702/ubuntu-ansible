@@ -90,6 +90,7 @@
         - ncdu
         - ranger
         - mc
+        - tealdeer
         - rmlint
         - speedtest-cli
         - neofetch
