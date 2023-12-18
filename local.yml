@@ -35,6 +35,7 @@
         - fonts-cascadia-code
         - fonts-firacode
         - fonts-jetbrains-mono
+        - fonts-3270
         - git
         - cmake
         - curl
