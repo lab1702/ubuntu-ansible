@@ -18,6 +18,10 @@
     apt:
       pkg:
         - snapd
+      state: present
+    when: ansible_facts['distribution'] == 'Debian'
+
+  - name: install debian megasync
       deb:
         - https://mega.nz/linux/repo/{{ ansible_distribution }}_{{ ansible_distribution_version }}/amd64/megasync-{{ ansible_distribution }}_{{ ansible_distribution_version }}_amd64.deb
       state: present
@@ -27,6 +31,13 @@
     apt:
       pkg:
         - ubuntu-restricted-extras
+      deb:
+        - https://mega.nz/linux/repo/x{{ ansible_distribution }}_{{ ansible_distribution_version }}/amd64/megasync-x{{ ansible_distribution }}_{{ ansible_distribution_version }}_amd64.deb
+      state: present
+    when: ansible_facts['distribution'] == 'Ubuntu'
+
+  - name: install ubuntu megasync
+    apt:
       deb:
         - https://mega.nz/linux/repo/x{{ ansible_distribution }}_{{ ansible_distribution_version }}/amd64/megasync-x{{ ansible_distribution }}_{{ ansible_distribution_version }}_amd64.deb
       state: present
