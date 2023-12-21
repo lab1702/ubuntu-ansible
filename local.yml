@@ -115,7 +115,6 @@
         - i7z
         - sloccount
         - figlet
-        - cowsay
         - graphviz
         - graphviz-doc
         - texlive-full
