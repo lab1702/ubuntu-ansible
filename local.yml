@@ -40,6 +40,11 @@
       state: present
     when: ansible_facts['distribution'] == 'Ubuntu'
 
+  - name: install rstudio desktop
+    apt:
+      deb: https://download1.rstudio.org/electron/jammy/amd64/rstudio-2023.12.0-369-amd64.deb
+      state: present
+
   - name: install generic packages
     apt:
       pkg:
