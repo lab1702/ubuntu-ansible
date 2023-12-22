@@ -23,9 +23,7 @@
 
   - name: install debian megasync
     apt:
-      deb:
-        - https://mega.nz/linux/repo/{{ ansible_distribution }}_{{ ansible_distribution_version }}/amd64/megasync-{{ ansible_distribution }}_{{ ansible_distribution_version }}_amd64.deb
-        - https://download1.rstudio.org/electron/jammy/amd64/rstudio-2023.12.0-369-amd64.deb
+      deb: https://mega.nz/linux/repo/{{ ansible_distribution }}_{{ ansible_distribution_version }}/amd64/megasync-{{ ansible_distribution }}_{{ ansible_distribution_version }}_amd64.deb
       state: present
     when: ansible_facts['distribution'] == 'Debian'
 
@@ -36,11 +34,9 @@
       state: present
     when: ansible_facts['distribution'] == 'Ubuntu'
 
-  - name: install ubuntu urls
+  - name: install ubuntu megasync
     apt:
-      deb:
-        - https://mega.nz/linux/repo/x{{ ansible_distribution }}_{{ ansible_distribution_version }}/amd64/megasync-x{{ ansible_distribution }}_{{ ansible_distribution_version }}_amd64.deb
-        - https://download1.rstudio.org/electron/jammy/amd64/rstudio-2023.12.0-369-amd64.deb
+      deb: https://mega.nz/linux/repo/x{{ ansible_distribution }}_{{ ansible_distribution_version }}/amd64/megasync-x{{ ansible_distribution }}_{{ ansible_distribution_version }}_amd64.deb
       state: present
     when: ansible_facts['distribution'] == 'Ubuntu'
 
