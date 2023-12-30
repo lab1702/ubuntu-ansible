@@ -49,6 +49,8 @@
     apt:
       pkg:
         - build-essential
+        - emscripten
+        - emscripten-doc
         - fonts-cascadia-code
         - fonts-firacode
         - fonts-jetbrains-mono
