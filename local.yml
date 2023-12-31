@@ -135,7 +135,6 @@
         - x3270
         - simh
         - obs-studio
-        - steamcmd
       state: present
 
   - name: autoremove packages
