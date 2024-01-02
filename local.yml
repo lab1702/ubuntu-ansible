@@ -82,6 +82,7 @@
         - libfribidi-dev
         - libv8-dev
         - libunwind-dev
+        - libarchive-dev
         - python3-venv
         - python3-virtualenv
         - rust-all
