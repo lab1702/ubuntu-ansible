@@ -59,6 +59,7 @@
         - fonts-proggy
         - fonts-inconsolata
         - fonts-hack
+        - kitty
         - git
         - cmake
         - curl
