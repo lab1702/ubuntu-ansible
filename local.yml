@@ -59,7 +59,6 @@
         - fonts-proggy
         - fonts-inconsolata
         - fonts-hack
-        - kitty
         - git
         - cmake
         - curl
@@ -103,6 +102,7 @@
         - docker-compose-v2
         - vim
         - emacs
+        - tilix
         - tmux
         - links2
         - recutils
