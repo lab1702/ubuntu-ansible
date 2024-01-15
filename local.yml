@@ -102,7 +102,6 @@
         - docker-compose-v2
         - vim
         - emacs
-        - tilix
         - tmux
         - links2
         - recutils
