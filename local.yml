@@ -50,7 +50,6 @@
       pkg:
         - build-essential
         - emscripten
-        - emscripten-doc
         - fonts-cascadia-code
         - fonts-firacode
         - fonts-jetbrains-mono
@@ -86,9 +85,6 @@
         - python3-venv
         - python3-virtualenv
         - rust-all
-        - nodejs
-        - npm
-        - node-opener
         - gnucobol
         - hexyl
         - bvi
@@ -98,12 +94,10 @@
         - swi-prolog
         - docker.io
         - docker-buildx
-        - docker-clean
         - docker-compose-v2
         - vim
         - emacs
         - tmux
-        - links2
         - recutils
         - ispell
         - ripgrep
@@ -115,14 +109,12 @@
         - ranger
         - mc
         - rmlint
-        - speedtest-cli
         - neofetch
         - cpufetch
         - i7z
         - sloccount
         - figlet
         - graphviz
-        - graphviz-doc
         - texlive-full
         - dos2unix
         - onedrive
@@ -130,11 +122,6 @@
         - htop
         - nvtop
         - glances
-        - hercules
-        - herculesstudio
-        - x3270
-        - simh
-        - obs-studio
       state: present
 
   - name: autoremove packages
