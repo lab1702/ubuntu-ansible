@@ -116,6 +116,7 @@
         - figlet
         - graphviz
         - texlive-full
+        - poppler-utils
         - dos2unix
         - onedrive
         - btop
