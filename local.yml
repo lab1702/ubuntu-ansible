@@ -117,6 +117,7 @@
         - graphviz
         - texlive-full
         - poppler-utils
+        - html2text
         - dos2unix
         - onedrive
         - btop
