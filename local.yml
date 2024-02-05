@@ -109,6 +109,7 @@
         - ranger
         - mc
         - rmlint
+        - stow
         - neofetch
         - cpufetch
         - i7z
