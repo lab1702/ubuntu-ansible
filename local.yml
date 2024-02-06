@@ -93,6 +93,7 @@
         - docker-compose-v2
         - vim
         - emacs
+        - elpa-ess
         - tmux
         - multitail
         - recutils
