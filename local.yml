@@ -92,6 +92,7 @@
         - docker-buildx
         - docker-compose-v2
         - vim
+        - emacs
         - tmux
         - multitail
         - recutils
