@@ -60,6 +60,7 @@
         - fonts-hack
         - git
         - cmake
+        - ccache
         - curl
         - wget
         - r-base
