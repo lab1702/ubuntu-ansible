@@ -14,37 +14,6 @@
       state: latest
       update_cache: true
 
-  - name: install debian packages
-    apt:
-      pkg:
-        - snapd
-      state: present
-    when: ansible_facts['distribution'] == 'Debian'
-
-  - name: install debian megasync
-    apt:
-      deb: https://mega.nz/linux/repo/{{ ansible_distribution }}_{{ ansible_distribution_version }}/amd64/megasync-{{ ansible_distribution }}_{{ ansible_distribution_version }}_amd64.deb
-      state: present
-    when: ansible_facts['distribution'] == 'Debian'
-
-  - name: install ubuntu packages
-    apt:
-      pkg:
-        - ubuntu-restricted-extras
-      state: present
-    when: ansible_facts['distribution'] == 'Ubuntu'
-
-  - name: install ubuntu megasync
-    apt:
-      deb: https://mega.nz/linux/repo/x{{ ansible_distribution }}_{{ ansible_distribution_version }}/amd64/megasync-x{{ ansible_distribution }}_{{ ansible_distribution_version }}_amd64.deb
-      state: present
-    when: ansible_facts['distribution'] == 'Ubuntu'
-
-  - name: install rstudio server
-    apt:
-      deb: https://download2.rstudio.org/server/jammy/amd64/rstudio-server-2023.12.1-402-amd64.deb
-      state: present
-
   - name: install generic packages
     apt:
       pkg:
@@ -122,6 +91,42 @@
         - htop
         - nvtop
         - glances
+      state: present
+
+  - name: install debian packages
+    apt:
+      pkg:
+        - snapd
+      state: present
+    when: ansible_facts['distribution'] == 'Debian'
+
+  - name: install debian megasync
+    apt:
+      deb: https://mega.nz/linux/repo/{{ ansible_distribution }}_{{ ansible_distribution_version }}/amd64/megasync-{{ ansible_distribution }}_{{ ansible_distribution_version }}_amd64.deb
+      state: present
+    when: ansible_facts['distribution'] == 'Debian'
+
+  - name: install ubuntu packages
+    apt:
+      pkg:
+        - ubuntu-restricted-extras
+      state: present
+    when: ansible_facts['distribution'] == 'Ubuntu'
+
+  - name: install ubuntu megasync
+    apt:
+      deb: https://mega.nz/linux/repo/x{{ ansible_distribution }}_{{ ansible_distribution_version }}/amd64/megasync-x{{ ansible_distribution }}_{{ ansible_distribution_version }}_amd64.deb
+      state: present
+    when: ansible_facts['distribution'] == 'Ubuntu'
+
+  - name: install rstudio server
+    apt:
+      deb: https://download2.rstudio.org/server/jammy/amd64/rstudio-server-2023.12.1-402-amd64.deb
+      state: present
+
+  - name: install shiny server
+    apt:
+      deb: https://download3.rstudio.org/ubuntu-18.04/x86_64/shiny-server-1.5.21.1012-amd64.deb
       state: present
 
   - name: autoremove packages
