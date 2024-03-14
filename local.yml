@@ -119,9 +119,9 @@
       state: present
     when: ansible_facts['distribution'] == 'Ubuntu'
 
-  - name: install rstudio server
+  - name: install rstudio desktop
     apt:
-      deb: https://download2.rstudio.org/server/jammy/amd64/rstudio-server-2023.12.1-402-amd64.deb
+      deb: https://download1.rstudio.org/electron/jammy/amd64/rstudio-2023.12.1-402-amd64.deb
       state: present
 
   - name: install shiny server
