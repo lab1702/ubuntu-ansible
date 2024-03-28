@@ -19,7 +19,6 @@
       pkg:
         - build-essential
         - emscripten
-        - fonts-cascadia-code
         - fonts-firacode
         - fonts-jetbrains-mono
         - fonts-3270
@@ -110,6 +109,7 @@
     apt:
       pkg:
         - ubuntu-restricted-extras
+        - fonts-cascadia-code
       state: present
     when: ansible_facts['distribution'] == 'Ubuntu'
 
