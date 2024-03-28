@@ -86,7 +86,6 @@
         - dos2unix
         - btop
         - htop
-        - nvtop
         - glances
       state: present
 
@@ -111,6 +110,7 @@
         - fonts-cascadia-code
         - docker-buildx
         - docker-compose-v2
+        - nvtop
       state: present
     when: ansible_facts['distribution'] == 'Ubuntu'
 
