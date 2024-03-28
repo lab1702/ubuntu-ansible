@@ -58,8 +58,6 @@
         - bvi
         - gnuplot
         - docker.io
-        - docker-buildx
-        - docker-compose-v2
         - vim
         - emacs
         - elpa-ess
@@ -96,6 +94,7 @@
     apt:
       pkg:
         - snapd
+        - docker-compose
       state: present
     when: ansible_facts['distribution'] == 'Debian'
 
@@ -110,6 +109,8 @@
       pkg:
         - ubuntu-restricted-extras
         - fonts-cascadia-code
+        - docker-buildx
+        - docker-compose-v2
       state: present
     when: ansible_facts['distribution'] == 'Ubuntu'
 
