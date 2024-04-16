@@ -68,7 +68,6 @@
         - ripgrep
         - fd-find
         - fzf
-        - exa
         - gdu
         - ncdu
         - ranger
