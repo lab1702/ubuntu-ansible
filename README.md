@@ -1,6 +1,6 @@
-# debian-ansible
+# ubuntu-ansible
 
-Ansible configuration that can be used with either Debian or Ubuntu.
+Ansible configuration that can be used with Ubuntu 24.04 LTS.
 
 ## Complete Workstation Setup
 
@@ -12,7 +12,7 @@ Ansible configuration that can be used with either Debian or Ubuntu.
 
 #### Run this to apply the config to your workstation
 
-    sudo ansible-pull -U https://github.com/lab1702/debian-ansible.git --extra-vars "host_user=${USER}"
+    sudo ansible-pull -U https://github.com/lab1702/ubuntu-ansible.git --extra-vars "host_user=${USER}"
 
 ## Snaps
 
