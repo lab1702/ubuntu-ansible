@@ -85,22 +85,6 @@
         - glances
       state: present
 
-  - name: install ubuntu megasync
-    apt:
-      deb: https://mega.nz/linux/repo/x{{ ansible_distribution }}_{{ ansible_distribution_version }}/amd64/megasync-x{{ ansible_distribution }}_{{ ansible_distribution_version }}_amd64.deb
-      state: present
-    when: ansible_facts['distribution'] == 'Ubuntu'
-
-  - name: install rstudio desktop
-    apt:
-      deb: https://download1.rstudio.org/electron/jammy/amd64/rstudio-2023.12.1-402-amd64.deb
-      state: present
-
-  - name: install shiny server
-    apt:
-      deb: https://download3.rstudio.org/ubuntu-18.04/x86_64/shiny-server-1.5.21.1012-amd64.deb
-      state: present
-
   - name: autoremove packages
     apt:
       autoremove: yes
