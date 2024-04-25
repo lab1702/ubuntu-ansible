@@ -19,13 +19,10 @@
       pkg:
         - build-essential
         - emscripten
+        - fonts-cascadia-code
         - fonts-firacode
         - fonts-jetbrains-mono
         - fonts-3270
-        - fonts-anonymous-pro
-        - fonts-proggy
-        - fonts-inconsolata
-        - fonts-hack
         - git
         - cmake
         - ccache
@@ -58,6 +55,8 @@
         - bvi
         - gnuplot
         - docker.io
+        - docker-buildx
+        - docker-compose-v2
         - vim
         - emacs
         - elpa-ess
@@ -69,9 +68,6 @@
         - fd-find
         - fzf
         - gdu
-        - ncdu
-        - ranger
-        - mc
         - rmlint
         - stow
         - neofetch
@@ -85,32 +81,9 @@
         - dos2unix
         - btop
         - htop
+        - nvtop
         - glances
       state: present
-
-  - name: install debian packages
-    apt:
-      pkg:
-        - snapd
-        - docker-compose
-      state: present
-    when: ansible_facts['distribution'] == 'Debian'
-
-  - name: install debian megasync
-    apt:
-      deb: https://mega.nz/linux/repo/{{ ansible_distribution }}_{{ ansible_distribution_version }}/amd64/megasync-{{ ansible_distribution }}_{{ ansible_distribution_version }}_amd64.deb
-      state: present
-    when: ansible_facts['distribution'] == 'Debian'
-
-  - name: install ubuntu packages
-    apt:
-      pkg:
-        - fonts-cascadia-code
-        - docker-buildx
-        - docker-compose-v2
-        - nvtop
-      state: present
-    when: ansible_facts['distribution'] == 'Ubuntu'
 
   - name: install ubuntu megasync
     apt:
