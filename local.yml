@@ -30,6 +30,7 @@
         - wget
         - r-base
         - r-base-dev
+        - r-cran-tidyverse
         - libxml2-dev
         - libcurl4-openssl-dev
         - libssl-dev
