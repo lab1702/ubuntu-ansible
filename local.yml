@@ -49,6 +49,7 @@
         - libv8-dev
         - libunwind-dev
         - libarchive-dev
+        - tdsodbc
         - python3-virtualenv
         - rust-all
         - gnucobol
