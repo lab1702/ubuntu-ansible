@@ -18,11 +18,8 @@
     apt:
       pkg:
         - build-essential
-        - emscripten
         - fonts-cascadia-code
         - fonts-firacode
-        - fonts-jetbrains-mono
-        - fonts-3270
         - git
         - cmake
         - ccache
@@ -51,6 +48,7 @@
         - libarchive-dev
         - unixodbc-dev
         - tdsodbc
+        - python3-venv
         - python3-virtualenv
         - rust-all
         - gnucobol
@@ -62,7 +60,6 @@
         - docker-compose-v2
         - vim
         - emacs
-        - elpa-ess
         - tmux
         - multitail
         - recutils
@@ -71,8 +68,6 @@
         - fd-find
         - fzf
         - gdu
-        - rmlint
-        - stow
         - neofetch
         - cpufetch
         - sloccount
@@ -85,7 +80,6 @@
         - btop
         - htop
         - nvtop
-        - glances
       state: present
 
   - name: autoremove packages
