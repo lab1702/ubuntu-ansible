@@ -11,6 +11,9 @@
   - name: install generic packages
     apt:
       pkg:
+        - docker.io
+        - docker-buildx
+        - docker-compose-v2
         - build-essential
         - fonts-cascadia-code
         - fonts-firacode
@@ -19,6 +22,8 @@
         - ccache
         - curl
         - wget
+        - gnuplot
+        - graphviz
         - r-base
         - r-base-dev
         - libxml2-dev
@@ -41,17 +46,13 @@
         - libarchive-dev
         - unixodbc-dev
         - tdsodbc
-        - python3-venv
         - python3-virtualenv
         - rust-all
         - gnucobol
         - hexyl
         - bvi
-        - gnuplot
-        - docker.io
-        - docker-buildx
-        - docker-compose-v2
         - vim
+        - sloccount
         - tmux
         - multitail
         - ispell
@@ -61,11 +62,7 @@
         - gdu
         - neofetch
         - cpufetch
-        - sloccount
         - figlet
-        - graphviz
-        - poppler-utils
-        - html2text
         - dos2unix
         - btop
         - htop
