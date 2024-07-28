@@ -8,12 +8,6 @@
 #    debug:
 #      var: ansible_facts
 
-  - name: update installed packages
-    apt:
-      name: "*"
-      state: latest
-      update_cache: true
-
   - name: install generic packages
     apt:
       pkg:
@@ -81,14 +75,6 @@
         - htop
         - nvtop
       state: present
-
-  - name: autoremove packages
-    apt:
-      autoremove: yes
-
-  - name: autoclean packages
-    apt:
-      autoclean: yes
 
   - name: add user to groups
     user:
