@@ -9,10 +9,16 @@
   #     var: ansible_facts
 
   - name: add cran repo key
-    get_url:
-      url: 'https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc'
-      dest: '/etc/apt/keyrings/cran_ubuntu_key.asc'
-      checksum: 'rsa2048:E298A3A825C0D65DFD57CBB651716619E084DAB9'
+    apt_key:
+      url: https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc
+      id: E298A3A825C0D65DFD57CBB651716619E084DAB9
+      keyring: /etc/apt/keyrings/cran_ubuntu_key.asc
+    
+  # - name: add cran repo key
+  #   get_url:
+  #     url: 'https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc'
+  #     dest: '/etc/apt/keyrings/cran_ubuntu_key.asc'
+  #     checksum: 'rsa2048:E298A3A825C0D65DFD57CBB651716619E084DAB9'
 
   - name: add cran repo url
     apt_repository:
