@@ -84,6 +84,7 @@
         - htop
         - nvtop
       state: present
+      update_cache: true
 
   - name: add user to groups
     user:
