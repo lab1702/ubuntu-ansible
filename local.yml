@@ -102,3 +102,16 @@
       groups:
         - docker
       append: yes
+
+  - name: install standard snaps
+    snap:
+      name:
+        - slides
+        - ruff
+
+  - name: install classic snaps
+    snap:
+      classic: yes
+      name:
+        - go
+        - powershell
