@@ -60,6 +60,7 @@
         - libv8-dev
         - libunwind-dev
         - libarchive-dev
+        - libsodium-dev
         - unixodbc-dev
         - tdsodbc
         - python3-virtualenv
