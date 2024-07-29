@@ -1,6 +1,6 @@
 # ubuntu-ansible
 
-Ansible configuration that can be used with Ubuntu 24.04 LTS.
+Ansible configuration that can be used with Ubuntu. Currently tested on 24.04 LTS.
 
 ## Complete Workstation Setup
 
