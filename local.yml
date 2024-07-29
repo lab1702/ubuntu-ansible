@@ -24,7 +24,7 @@
       state: latest
       update_cache: true
 
-  - name: install generic packages
+  - name: install packages
     apt:
       pkg:
         - docker.io
