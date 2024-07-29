@@ -61,6 +61,7 @@
         - libunwind-dev
         - libarchive-dev
         - libsodium-dev
+        - libsecret-1-dev
         - unixodbc-dev
         - tdsodbc
         - python3-virtualenv
