@@ -86,6 +86,16 @@
       state: present
       update_cache: true
 
+  - name: autoremove packages
+    apt:
+      autoremove: yes
+      update_cache: true
+
+  - name: autoclean packages
+    apt:
+      autoclean: yes
+      update_cache: true
+      
   - name: add user to groups
     user:
       name: "{{ host_user }}"
