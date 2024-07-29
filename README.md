@@ -8,7 +8,7 @@ Ansible configuration that can be used with Ubuntu 24.04 LTS.
 
 #### Run this once after installing the OS
 
-    sudo apt update && sudo apt install -y git ansible
+    sudo apt update && sudo apt upgrade -y && sudo apt install -y git ansible
 
 #### Run this to apply the config to your workstation
 
