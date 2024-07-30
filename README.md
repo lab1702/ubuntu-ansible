@@ -16,23 +16,19 @@ Ansible configuration that can be used with Ubuntu. Currently tested on 24.04 LT
 
 ## OneDrive
 
-To use OneDrive, follow instructions at [https://github.com/abraunegg/onedrive](https://github.com/abraunegg/onedrive) to configure.
-
-### Quick HOWTO
-
-#### Initial Authentication
+### Initial Authentication
 
     onedrive
 
-#### Initial Sync
+### Initial Sync
 
     onedrive --synchronize
 
-#### Enable Monitoring
+### Enable Monitoring
 
     sudo systemctl enable onedrive@${USER}.service
     sudo systemctl start onedrive@${USER}.service
 
-#### Watch Logs
+### Watch Logs
 
     sudo journalctl --unit=onedrive@${USER} -f
