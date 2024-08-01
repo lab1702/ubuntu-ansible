@@ -111,7 +111,6 @@
   - name: install standard snaps
     snap:
       name:
-        - slides
         - ruff
 
   - name: install classic snaps
