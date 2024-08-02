@@ -64,7 +64,6 @@
         - libsodium-dev
         - libsecret-1-dev
         - libgit2-dev
-        - libasound2t64
         - unixodbc-dev
         - tdsodbc
         - python3-virtualenv
