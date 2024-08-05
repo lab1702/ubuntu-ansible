@@ -117,4 +117,7 @@
       classic: yes
       name:
         - go
+        - julia
         - powershell
+        - nvim
+        - helix
