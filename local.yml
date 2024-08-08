@@ -67,6 +67,8 @@
         - unixodbc-dev
         - tdsodbc
         - python3-virtualenv
+        - nodejs
+        - npm
         - rust-all
         - gnucobol
         - hexyl
