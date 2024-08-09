@@ -86,7 +86,6 @@
         - cpufetch
         - figlet
         - dos2unix
-        - btop
         - htop
         - nvtop
       state: present
