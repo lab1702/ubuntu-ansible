@@ -120,6 +120,4 @@
       name:
         - go
         - powershell
-        - nvim
-        - emacs
         - helix
