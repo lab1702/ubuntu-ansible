@@ -92,11 +92,6 @@
       state: present
       update_cache: true
 
-  - name: install rstudio-server
-    apt:
-      deb: https://download2.rstudio.org/server/jammy/amd64/rstudio-server-2024.04.2-764-amd64.deb
-      state: present
-
   - name: autoremove packages
     apt:
       autoremove: yes
@@ -124,9 +119,7 @@
       classic: yes
       name:
         - go
-        - julia
         - powershell
         - nvim
         - emacs
         - helix
-        - zellij
