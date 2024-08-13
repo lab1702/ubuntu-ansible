@@ -102,14 +102,12 @@
   - name: install standard snaps
     snap:
       name:
-        - lxd
         - ruff
 
   - name: install classic snaps
     snap:
       classic: yes
       name:
-        - snapcraft
         - go
         - powershell
         - helix
@@ -119,5 +117,4 @@
       name: "{{ host_user }}"
       groups:
         - docker
-        - lxd
       append: yes
