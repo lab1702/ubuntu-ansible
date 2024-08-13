@@ -67,8 +67,6 @@
         - unixodbc-dev
         - tdsodbc
         - python3-virtualenv
-        - nodejs
-        - npm
         - rust-all
         - gnucobol
         - hexyl
@@ -81,12 +79,12 @@
         - ripgrep
         - fd-find
         - fzf
-        - gdu
         - neofetch
         - cpufetch
         - figlet
         - dos2unix
         - htop
+        - btop
         - nvtop
       state: present
       update_cache: true
@@ -101,22 +99,25 @@
       autoclean: yes
       update_cache: true
       
-  - name: add user to groups
-    user:
-      name: "{{ host_user }}"
-      groups:
-        - docker
-      append: yes
-
   - name: install standard snaps
     snap:
       name:
+        - lxd
         - ruff
 
   - name: install classic snaps
     snap:
       classic: yes
       name:
+        - snapcraft
         - go
         - powershell
         - helix
+
+  - name: add user to groups
+    user:
+      name: "{{ host_user }}"
+      groups:
+        - docker
+        - lxd
+      append: yes
