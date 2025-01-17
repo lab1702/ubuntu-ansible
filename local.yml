@@ -90,7 +90,6 @@
         - atop
         - iftop
         - iotop-c
-        - sysdig
       state: present
       update_cache: true
 
