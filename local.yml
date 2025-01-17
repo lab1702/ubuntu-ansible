@@ -86,6 +86,11 @@
         - htop
         - btop
         - nvtop
+        - s-tui
+        - atop
+        - iftop
+        - iotop-c
+        - sysdig
       state: present
       update_cache: true
 
