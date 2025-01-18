@@ -66,6 +66,7 @@
         - libgit2-dev
         - unixodbc-dev
         - tdsodbc
+        - python3-venv
         - python3-virtualenv
         - rust-all
         - gnucobol
