@@ -88,6 +88,7 @@
         - btop
         - nvtop
         - s-tui
+        - stress
         - atop
         - iftop
         - iotop-c
