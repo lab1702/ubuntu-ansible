@@ -104,19 +104,12 @@
       autoclean: yes
       update_cache: true
       
-  - name: install standard snaps
-    snap:
-      name:
-        - ruff
-
   - name: install classic snaps
     snap:
       classic: yes
       name:
-        - nushell
         - go
         - powershell
-        - helix
 
   - name: install duckdb cli
     unarchive:
