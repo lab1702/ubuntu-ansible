@@ -65,6 +65,7 @@
         - libsodium-dev
         - libsecret-1-dev
         - libgit2-dev
+        - libmagick++-dev
         - unixodbc-dev
         - tdsodbc
         - python3-venv
