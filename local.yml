@@ -116,7 +116,7 @@
 
   - name: install duckdb cli
     unarchive:
-      src: https://github.com/duckdb/duckdb/releases/download/v1.2.0/duckdb_cli-linux-amd64.zip
+      src: https://github.com/duckdb/duckdb/releases/download/v1.2.1/duckdb_cli-linux-amd64.zip
       dest: /usr/local/bin
       remote_src: yes
 
