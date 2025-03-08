@@ -82,6 +82,8 @@
         - ripgrep
         - fd-find
         - fzf
+        - tree
+        - gdu
         - neofetch
         - cpufetch
         - figlet
