@@ -12,11 +12,13 @@
     get_url:
       url: 'https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc'
       dest: '/etc/apt/keyrings/cran_ubuntu_key.asc'
+    when: cran is defined and cran != ''
 
   - name: add cran repo url
     apt_repository:
       repo: 'deb [signed-by=/etc/apt/keyrings/cran_ubuntu_key.asc] https://cloud.r-project.org/bin/linux/ubuntu {{ansible_facts.distribution_release}}-cran40/'
       state: present
+    when: cran is defined and cran != ''
 
   - name: update installed packages
     apt:
