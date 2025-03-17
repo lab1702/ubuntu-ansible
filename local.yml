@@ -133,6 +133,9 @@
   - name: remove latest duckdb installation script
     command: rm -f /tmp/duckdb_install.sh
 
+  - name: remove old duckdb binary from /usr/local/bin
+    command: rm -f /usr/local/bin/duckdb
+
   - name: copy duckdb binary from /root installation to /usr/local/bin
     copy:
       src: /root/.duckdb/cli/latest/duckdb
