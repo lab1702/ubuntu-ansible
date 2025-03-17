@@ -119,8 +119,11 @@
         - powershell
 
   - name: download duckdb script
-    get_url: url=https://install.duckdb.org dest=/tmp/duckdb_install.sh mode=0755
-    force: true
+    get_url:
+      url: https://install.duckdb.org
+      dest: /tmp/duckdb_install.sh
+      mode: '0755'
+      force: true
 
   - name: run duckdb script
     command: /tmp/duckdb_install.sh
