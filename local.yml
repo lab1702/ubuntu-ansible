@@ -118,32 +118,32 @@
         - go
         - powershell
 
-  - name: delete old duckdb script if it exists
+  - name: delete old duckdb install script if it exists
     command: rm -f /tmp/duckdb_install.sh
 
-  - name: download latest duckdb script
+  - name: download latest duckdb install script
     get_url:
       url: https://install.duckdb.org
       dest: /tmp/duckdb_install.sh
       mode: '0755'
 
-  - name: run latest duckdb script
+  - name: run latest duckdb install script
     command: /tmp/duckdb_install.sh
 
-  - name: remove latest duckdb installation script
+  - name: remove latest duckdb install script
     command: rm -f /tmp/duckdb_install.sh
 
   - name: remove old duckdb binary from /usr/local/bin
     command: rm -f /usr/local/bin/duckdb
 
-  - name: copy duckdb binary from /root installation to /usr/local/bin
+  - name: copy latest duckdb binary from /root installation to /usr/local/bin
     copy:
       src: /root/.duckdb/cli/latest/duckdb
       dest: /usr/local/bin/duckdb
       mode: '0755'
       remote_src: yes
 
-  - name: remove duckdb temporary /root installation
+  - name: remove duckdb /root installation
     command: rm -rf /root/.duckdb
 
   - name: add user to groups
