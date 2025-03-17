@@ -118,6 +118,9 @@
         - go
         - powershell
 
+  - name: download duckdb script
+    get_url: url=https://install.duckdb.org dest=/tmp/duckdb_install.sh 
+
   - name: add user to groups
     user:
       name: "{{ host_user }}"
