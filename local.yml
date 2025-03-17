@@ -123,7 +123,7 @@
       url: https://install.duckdb.org
       dest: /tmp/duckdb_install.sh
       mode: '0755'
-      force: true
+      force: yes
 
   - name: run duckdb script
     command: /tmp/duckdb_install.sh
