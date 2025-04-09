@@ -29,6 +29,7 @@
   - name: install packages
     apt:
       pkg:
+        - linux-tools-common
         - docker.io
         - docker-buildx
         - docker-compose-v2
