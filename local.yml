@@ -74,7 +74,6 @@
         - tdsodbc
         - python3-venv
         - python3-virtualenv
-        - jupyter
         - rust-all
         - gnucobol
         - hexyl
