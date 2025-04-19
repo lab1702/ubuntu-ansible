@@ -74,6 +74,7 @@
         - tdsodbc
         - python3-venv
         - python3-virtualenv
+        - jupyter
         - rust-all
         - gnucobol
         - hexyl
@@ -100,6 +101,7 @@
         - atop
         - iftop
         - iotop-c
+        - glances
       state: present
       update_cache: true
 
