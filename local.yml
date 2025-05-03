@@ -47,7 +47,6 @@
         - graphviz
         - r-base
         - r-base-dev
-        - shiny-server
         - libopenblas-dev
         - pandoc
         - libxml2-dev
@@ -114,6 +113,18 @@
       name:
         - go
         - powershell
+
+  - name: get current version of rstudio
+    uri: url=http://download2.rstudio.org/current.ver return_content=yes
+    register: rstudio_version
+    become: no
+
+  - name: download current version of rstudio
+    get_url: url=http://download2.rstudio.org/rstudio-{{ rstudio_version.content }}-amd64.deb dest=/tmp/rstudio.deb
+    become: no
+
+  - name: install rstudio
+    command: apt install -y /tmp/rstudio.deb
 
   - name: install duckdb cli
     unarchive:
