@@ -47,6 +47,7 @@
         - graphviz
         - r-base
         - r-base-dev
+        - shiny-server
         - libopenblas-dev
         - pandoc
         - libxml2-dev
