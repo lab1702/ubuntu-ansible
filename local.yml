@@ -124,7 +124,6 @@
       name:
         - go
         - powershell
-        - rstudio
 
   - name: delete old duckdb install script if it exists
     command: rm -f /tmp/duckdb_install.sh
