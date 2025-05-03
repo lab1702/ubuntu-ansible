@@ -108,16 +108,6 @@
       state: present
       update_cache: true
 
-  - name: autoremove packages
-    apt:
-      autoremove: yes
-      update_cache: true
-
-  - name: autoclean packages
-    apt:
-      autoclean: yes
-      update_cache: true
-      
   - name: install classic snaps
     snap:
       classic: yes
