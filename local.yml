@@ -39,6 +39,7 @@
         - git
         - cmake
         - ccache
+        - meson
         - curl
         - wget
         - jq
