@@ -71,6 +71,9 @@
         - hexyl
         - bvi
         - vim
+        - sqlite3
+        - sqlite3-tools
+        - sqlite3-doc
         - sloccount
         - tmux
         - multitail
