@@ -103,7 +103,7 @@
   - name: install snaps
     snap:
       name:
-        - mission-center
+        - slides
 
   - name: install classic snaps
     snap:
