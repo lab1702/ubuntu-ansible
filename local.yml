@@ -25,6 +25,7 @@
         - fonts-cascadia-code
         - fonts-firacode
         - git
+        - gh
         - cmake
         - ccache
         - meson
