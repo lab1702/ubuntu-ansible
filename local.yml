@@ -100,11 +100,6 @@
       state: present
       update_cache: true
 
-  - name: install snaps
-    snap:
-      name:
-        - slides
-
   - name: install classic snaps
     snap:
       classic: yes
