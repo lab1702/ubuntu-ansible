@@ -17,7 +17,6 @@
   - name: install packages
     apt:
       pkg:
-        - flatpak
         - linux-tools-common
         - docker.io
         - docker-buildx
@@ -92,7 +91,6 @@
         - btop
         - nvtop
         - s-tui
-        - stress
         - atop
         - iftop
         - iotop-c
