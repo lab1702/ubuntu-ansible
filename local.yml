@@ -98,9 +98,6 @@
       state: present
       update_cache: true
 
-  - name: configure flathub
-    command: "flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo"
-
   - name: install classic snaps
     snap:
       classic: yes
