@@ -66,6 +66,8 @@
         - tdsodbc
         - python3-venv
         - python3-virtualenv
+        - nodejs
+        - npm
         - rust-all
         - gnucobol
         - hexyl
