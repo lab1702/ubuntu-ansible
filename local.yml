@@ -76,14 +76,13 @@
         - sqlite3
         - sqlite3-tools
         - sqlite3-doc
-        - sloccount
-        - tmux
         - multitail
         - ispell
         - ripgrep
         - fd-find
         - fzf
         - tree
+        - ncdu
         - gdu
         - neofetch
         - cpufetch
@@ -91,12 +90,11 @@
         - dos2unix
         - htop
         - btop
-        - nvtop
-        - s-tui
         - atop
+        - nvtop
         - iftop
         - iotop-c
-        - glances
+        - s-tui
       state: present
       update_cache: true
 
