@@ -117,3 +117,4 @@
       groups:
         - docker
       append: yes
+    when: host_user is defined and host_user != ''
