@@ -82,19 +82,13 @@
         - fd-find
         - fzf
         - tree
-        - ncdu
         - gdu
         - neofetch
         - cpufetch
         - figlet
         - dos2unix
-        - htop
         - btop
-        - atop
         - nvtop
-        - iftop
-        - iotop-c
-        - s-tui
       state: present
       update_cache: true
 
