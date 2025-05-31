@@ -13,3 +13,13 @@ Ansible configuration that can be used with Ubuntu. Currently tested on 24.04 LT
 #### Run this to apply the config to your workstation
 
     sudo ansible-pull -U https://github.com/lab1702/ubuntu-ansible.git --extra-vars "host_user=${USER}"
+
+### Ansible Commands for root users
+
+#### Run this once after installing the OS
+
+    apt update && apt upgrade -y && apt install -y git ansible
+
+#### Run this to apply the config to your workstation
+
+    ansible-pull -U https://github.com/lab1702/ubuntu-ansible.git
