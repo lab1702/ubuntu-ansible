@@ -33,6 +33,7 @@
         - wget
         - jq
         - gnuplot
+        - ttyplot
         - graphviz
         - r-base
         - r-base-dev
