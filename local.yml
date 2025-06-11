@@ -90,6 +90,7 @@
         - dos2unix
         - btop
         - nvtop
+        - inxi
       state: present
       update_cache: true
 
