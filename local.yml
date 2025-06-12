@@ -67,6 +67,8 @@
         - tdsodbc
         - python3-venv
         - python3-virtualenv
+        - python3-pylsp
+        - python3-jedi
         - nodejs
         - npm
         - rust-all
@@ -95,6 +97,11 @@
         - inxi
       state: present
       update_cache: true
+
+  - name: install snaps
+    snap:
+      name:
+        - ruff
 
   - name: install classic snaps
     snap:
