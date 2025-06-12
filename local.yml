@@ -77,6 +77,8 @@
         - sqlite3
         - sqlite3-tools
         - sqlite3-doc
+        - tmux
+        - dvtm
         - multitail
         - ispell
         - ripgrep
