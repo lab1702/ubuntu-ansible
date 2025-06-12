@@ -67,8 +67,6 @@
         - tdsodbc
         - python3-venv
         - python3-virtualenv
-        - python3-pylsp
-        - python3-jedi
         - nodejs
         - npm
         - rust-all
