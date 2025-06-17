@@ -29,10 +29,6 @@
   - name: install packages
     apt:
       pkg:
-        - linux-tools-common
-        - docker.io
-        - docker-buildx
-        - docker-compose-v2
         - build-essential
         - fonts-cascadia-code
         - fonts-firacode
@@ -78,7 +74,6 @@
         - unixodbc-dev
         - tdsodbc
         - python3-venv
-        - python3-virtualenv
         - nodejs
         - npm
         - rust-all
@@ -88,7 +83,6 @@
         - vim
         - sqlite3
         - sqlite3-tools
-        - sqlite3-doc
         - tmux
         - dvtm
         - multitail
@@ -102,16 +96,12 @@
         - cpufetch
         - figlet
         - dos2unix
+        - htop
         - btop
         - nvtop
         - inxi
       state: present
       update_cache: true
-
-  - name: install snaps
-    snap:
-      name:
-        - ruff
 
   - name: install classic snaps
     snap:
@@ -126,11 +116,3 @@
       src: https://github.com/duckdb/duckdb/releases/latest/download/duckdb_cli-linux-amd64.zip
       dest: /usr/local/bin
       remote_src: yes
-
-  - name: add user to groups
-    user:
-      name: "{{ host_user }}"
-      groups:
-        - docker
-      append: yes
-    when: host_user is defined and host_user != ''
