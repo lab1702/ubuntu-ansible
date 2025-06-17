@@ -12,11 +12,11 @@ Ansible configuration that can be used with Ubuntu. Currently tested on 24.04 LT
 
 #### Run this to apply the config to your workstation with OS package for R
 
-    sudo ansible-pull -U https://github.com/lab1702/ubuntu-ansible.git --extra-vars "host_user=${USER}"
+    sudo ansible-pull -U https://github.com/lab1702/ubuntu-ansible.git
 
 #### Run this to apply the config to your workstation with CRAN package for R
 
-    sudo ansible-pull -U https://github.com/lab1702/ubuntu-ansible.git --extra-vars "host_user=${USER} cran=true"
+    sudo ansible-pull -U https://github.com/lab1702/ubuntu-ansible.git --extra-vars "cran=true"
 
 ### Ansible Commands for root users
 
