@@ -85,7 +85,6 @@
         - sqlite3
         - sqlite3-tools
         - tmux
-        - dvtm
         - multitail
         - ispell
         - ripgrep
@@ -103,14 +102,6 @@
         - inxi
       state: present
       update_cache: true
-
-  - name: install classic snaps
-    snap:
-      classic: yes
-      name:
-        - go
-        - powershell
-        - helix
 
   - name: install duckdb cli
     unarchive:
