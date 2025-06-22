@@ -31,3 +31,15 @@ Ansible configuration that can be used with Ubuntu. Currently tested on 24.04 LT
 #### Run this to apply the config to your workstation with CRAN package for R
 
     ansible-pull -U https://github.com/lab1702/ubuntu-ansible.git --extra-vars "cran=true"
+
+## Claude Code Setup
+
+### Configuring npm to install in user gome directory
+
+    mkdir ~/.npm-global
+    npm config set prefix '~/.npm-global'
+    echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.profile
+
+### Installing Claude Code
+
+    npm install -g @anthropic-ai/claude-code
