@@ -46,4 +46,5 @@ Ansible configuration that can be used with Ubuntu. Currently tested on 24.04 LT
 
 ## Downloading RStudio
 
-    curl https://raw.githubusercontent.com/lab1702/ubuntu-ansible/refs/heads/main/download-rstudio.sh | bash -
+    wget https://raw.githubusercontent.com/lab1702/ubuntu-ansible/refs/heads/main/download-rstudio.sh
+    bash download-rstudio.sh
