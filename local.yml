@@ -78,7 +78,6 @@
         - nodejs
         - npm
         - golang
-        - rust-all
         - gnucobol
         - hexyl
         - bvi
