@@ -43,3 +43,7 @@ Ansible configuration that can be used with Ubuntu. Currently tested on 24.04 LT
 ### Install Claude Code
 
     npm install -g @anthropic-ai/claude-code
+
+## Downloading RStudio
+
+    curl https://raw.githubusercontent.com/lab1702/ubuntu-ansible/refs/heads/main/download-rstudio.sh | bash -
