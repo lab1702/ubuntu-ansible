@@ -33,6 +33,7 @@
         - fonts-cascadia-code
         - fonts-firacode
         - git
+        - git-credential-manager
         - gh
         - cmake
         - ccache
