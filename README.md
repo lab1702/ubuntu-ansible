@@ -39,6 +39,7 @@ Ansible configuration that can be used with Ubuntu. Currently tested on 24.04 LT
     mkdir ~/.npm-global
     npm config set prefix '~/.npm-global'
     echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.profile
+    export PATH=~/.npm-global/bin:$PATH
 
 ### Install Claude Code
 
