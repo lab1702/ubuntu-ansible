@@ -30,6 +30,9 @@
     apt:
       pkg:
         - build-essential
+        - docker.io
+        - docker-buildx
+        - docker-compose-v2
         - fonts-cascadia-code
         - fonts-firacode
         - git
