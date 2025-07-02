@@ -18,6 +18,10 @@ Ansible configuration that can be used with Ubuntu. Currently tested on 24.04 LT
 
     sudo ansible-pull -U https://github.com/lab1702/ubuntu-ansible.git --extra-vars "cran=true"
 
+#### Run this if you don't want to have to sudo docker commands
+
+    sudo usermod -aG docker $USER
+
 ### Ansible Commands for root users
 
 #### Run this once after installing the OS
