@@ -41,7 +41,7 @@ Ansible configuration that can be used with Ubuntu. Currently tested on 24.04 LT
     sudo update-alternatives --install /usr/bin/x-www-browser x-www-browser "/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe" 200
     sudo update-alternatives --config x-www-browser
 
-### Download Warp Terminal
+## Download Warp Terminal
 
     wget https://raw.githubusercontent.com/lab1702/warp-downloader/refs/heads/main/download-warp.sh
     bash download-warp.sh
