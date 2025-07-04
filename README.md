@@ -41,7 +41,13 @@ Ansible configuration that can be used with Ubuntu. Currently tested on 24.04 LT
     sudo update-alternatives --install /usr/bin/x-www-browser x-www-browser "/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe" 200
     sudo update-alternatives --config x-www-browser
 
-## Downloading RStudio
+### Download Warp Terminal
+
+    wget https://raw.githubusercontent.com/lab1702/warp-downloader/refs/heads/main/download-warp.sh
+    bash download-warp.sh
+    rm download-warp.sh
+
+## Download RStudio
 
     wget https://raw.githubusercontent.com/lab1702/rstudio-downloader/refs/heads/main/download-rstudio.sh
     bash download-rstudio.sh
@@ -56,14 +62,6 @@ Ansible configuration that can be used with Ubuntu. Currently tested on 24.04 LT
     echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.profile
     export PATH=~/.npm-global/bin:$PATH
 
-### Install Gemini CLI
-
-    npm install -g @google/gemini-cli
-
-#### Update Gemini CLI
-
-    npm upgrade -g @google/gemini-cli
-
 ### Install Claude Code
 
     npm install -g @anthropic-ai/claude-code
@@ -71,3 +69,11 @@ Ansible configuration that can be used with Ubuntu. Currently tested on 24.04 LT
 #### Update Claude Code
 
     claude update
+
+### Install Gemini CLI
+
+    npm install -g @google/gemini-cli
+
+#### Update Gemini CLI
+
+    npm upgrade -g @google/gemini-cli
