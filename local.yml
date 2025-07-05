@@ -20,26 +20,6 @@
       state: present
     when: cran is defined and cran != ''
 
-  - name: add warp repo key
-    get_url:
-      url: 'https://releases.warp.dev/linux/keys/warp.asc'
-      dest: '/etc/apt/keyrings/warp.asc'
-    when: warp is defined and cran != ''
-
-  - name: add warp repo url
-    apt_repository:
-      repo: 'deb [arch=amd64 signed-by=/etc/apt/keyrings/warp.asc] https://releases.warp.dev/linux/deb stable main'
-      state: present
-    when: warp is defined and cran != ''
-
-  - name: install warp
-    apt:
-      pkg:
-        - warp-terminal
-      state: present
-      update_cache: true
-    when: warp is defined and cran != ''
-
   - name: update installed packages
     apt:
       name: "*"
