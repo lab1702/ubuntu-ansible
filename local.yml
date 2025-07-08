@@ -95,6 +95,9 @@
         - ripgrep
         - fd-find
         - fzf
+        - delta
+        - bat
+        - eza
         - tree
         - gdu
         - neofetch
