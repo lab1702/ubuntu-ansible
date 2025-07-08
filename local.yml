@@ -98,6 +98,7 @@
         - tree
         - gdu
         - neofetch
+        - fastfetch
         - cpufetch
         - figlet
         - dos2unix
