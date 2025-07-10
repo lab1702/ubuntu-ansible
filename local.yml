@@ -82,7 +82,6 @@
         - python3-virtualenv
         - nodejs
         - npm
-        - golang
         - gnucobol
         - hexyl
         - bvi
