@@ -4,7 +4,7 @@ Ansible configuration that can be used with Ubuntu. Currently tested on 24.04 LT
 
 ## Complete Workstation Setup
 
-### Ansible Commands
+### Ansible Commands for non-root users
 
 #### Run this once after installing the OS
 
@@ -41,19 +41,13 @@ Ansible configuration that can be used with Ubuntu. Currently tested on 24.04 LT
     sudo update-alternatives --install /usr/bin/x-www-browser x-www-browser "/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe" 200
     sudo update-alternatives --config x-www-browser
 
-## Download Warp Terminal
-
-    wget https://raw.githubusercontent.com/lab1702/warp-downloader/refs/heads/main/download-warp.sh
-    bash download-warp.sh
-    rm download-warp.sh
-
 ## Download RStudio
 
     wget https://raw.githubusercontent.com/lab1702/rstudio-downloader/refs/heads/main/download-rstudio.sh
     bash download-rstudio.sh
     rm download-rstudio.sh
 
-## AI Tools
+## NodeJS Setup
 
 ### Configure npm to install packages in user home directory
 
@@ -61,19 +55,3 @@ Ansible configuration that can be used with Ubuntu. Currently tested on 24.04 LT
     npm config set prefix '~/.npm-global'
     echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.profile
     export PATH=~/.npm-global/bin:$PATH
-
-### Install Claude Code
-
-    npm install -g @anthropic-ai/claude-code
-
-#### Update Claude Code
-
-    claude update
-
-### Install Gemini CLI
-
-    npm install -g @google/gemini-cli
-
-#### Update Gemini CLI
-
-    npm upgrade -g @google/gemini-cli
