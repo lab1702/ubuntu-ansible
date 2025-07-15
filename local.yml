@@ -110,11 +110,13 @@
       name:
         - docker
         - ruff
+        - pylsp
 
   - name: install classic snaps
     snap:
       classic: yes
       name:
+        - helix
         - go
         - powershell
         - astral-uv
