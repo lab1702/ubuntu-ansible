@@ -30,10 +30,6 @@
     apt:
       pkg:
         - build-essential
-        - fonts-jetbrains-mono
-        - fonts-jetbrains-mono-web
-        - fonts-cascadia-code
-        - fonts-firacode
         - git
         - gh
         - cmake
