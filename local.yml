@@ -30,6 +30,13 @@
     apt:
       pkg:
         - build-essential
+        - docker.io
+        - docker-buildx
+        - docker-compose-v2
+        - fonts-jetbrains-mono
+        - fonts-jetbrains-mono-web
+        - fonts-cascadia-code
+        - fonts-firacode
         - git
         - gh
         - cmake
@@ -73,6 +80,8 @@
         - tdsodbc
         - python3-venv
         - python3-virtualenv
+        - nodejs
+        - npm
         - gnucobol
         - hexyl
         - bvi
@@ -100,23 +109,6 @@
         - mtr-tiny
       state: present
       update_cache: true
-
-  - name: install snaps
-    snap:
-      name:
-        - docker
-        - ruff
-        - pylsp
-
-  - name: install classic snaps
-    snap:
-      classic: yes
-      name:
-        - helix
-        - go
-        - powershell
-        - astral-uv
-        - node
 
   - name: install duckdb cli
     unarchive:
