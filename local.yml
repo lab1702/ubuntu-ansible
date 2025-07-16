@@ -80,6 +80,7 @@
         - tdsodbc
         - python3-venv
         - python3-virtualenv
+        - golang
         - nodejs
         - npm
         - gnucobol
