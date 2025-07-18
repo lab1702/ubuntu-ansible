@@ -33,10 +33,11 @@
         - docker.io
         - docker-buildx
         - docker-compose-v2
-        - fonts-jetbrains-mono
-        - fonts-jetbrains-mono-web
+        - fonts-anonymous-pro
         - fonts-cascadia-code
         - fonts-firacode
+        - fonts-jetbrains-mono
+        - fonts-jetbrains-mono-web
         - git
         - gh
         - cmake
