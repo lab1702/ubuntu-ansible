@@ -121,6 +121,7 @@
     snap:
       classic: yes
       name:
+        - nvim
         - helix
         - powershell
         - astral-uv
