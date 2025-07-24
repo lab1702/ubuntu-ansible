@@ -100,6 +100,9 @@
         - eza
         - tree
         - gdu
+        - wl-clipboard
+        - xclip
+        - xsel
         - neofetch
         - cpufetch
         - figlet
