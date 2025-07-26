@@ -55,3 +55,13 @@ Ansible configuration that can be used with Ubuntu. Currently tested on 24.04 LT
     npm config set prefix '~/.npm-global'
     echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.profile
     export PATH=~/.npm-global/bin:$PATH
+
+## Coding Agents
+
+### OpenCode
+
+    curl -fsSL https://opencode.ai/install | bash
+
+### Claude Code
+
+    npm install -g @anthropic-ai/claude-code
