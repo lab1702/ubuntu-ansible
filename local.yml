@@ -83,6 +83,9 @@
         - libdisplay-info-dev
         - librust-pangocairo-sys-dev
         - librust-libspa-sys-dev
+        - libinput-dev
+        - libxkbcommon-dev
+        - libgbm-dev
         - tdsodbc
         - python3-venv
         - python3-virtualenv
