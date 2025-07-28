@@ -78,6 +78,7 @@
         - libpoppler-cpp-dev
         - libavfilter-dev
         - unixodbc-dev
+        - libudev-dev
         - tdsodbc
         - python3-venv
         - python3-virtualenv
