@@ -79,6 +79,7 @@
         - libavfilter-dev
         - unixodbc-dev
         - libudev-dev
+        - libseat-dev
         - tdsodbc
         - python3-venv
         - python3-virtualenv
