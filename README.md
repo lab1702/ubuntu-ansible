@@ -38,8 +38,14 @@ Ansible configuration that can be used with Ubuntu. Currently tested on 24.04 LT
 
 ## Configure Edge as default browser in WSL
 
+***Only on WSL!***
+
     sudo update-alternatives --install /usr/bin/x-www-browser x-www-browser "/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe" 200
     sudo update-alternatives --config x-www-browser
+
+## Install OpenCode
+
+    curl -fsSL https://opencode.ai/install | bash
 
 ## Download RStudio
 
@@ -47,21 +53,13 @@ Ansible configuration that can be used with Ubuntu. Currently tested on 24.04 LT
     bash download-rstudio.sh
     rm download-rstudio.sh
 
-## NodeJS Setup
+## NodeJS NPM Setup
+
+*This is needed if you want to install Claude Code, Gemini CLI and other npm packages.*
 
 ### Configure npm to install packages in user home directory
 
     mkdir ~/.npm-global
     npm config set prefix '~/.npm-global'
-    echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.profile
+    echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.bashrc
     export PATH=~/.npm-global/bin:$PATH
-
-## Coding Agents
-
-### OpenCode
-
-    curl -fsSL https://opencode.ai/install | bash
-
-### Claude Code
-
-    npm install -g @anthropic-ai/claude-code
