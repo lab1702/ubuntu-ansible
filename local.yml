@@ -81,6 +81,7 @@
         - libudev-dev
         - libseat-dev
         - libdisplay-info-dev
+        - librust-pangocairo-sys-dev
         - tdsodbc
         - python3-venv
         - python3-virtualenv
