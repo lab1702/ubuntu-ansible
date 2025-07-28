@@ -80,6 +80,7 @@
         - unixodbc-dev
         - libudev-dev
         - libseat-dev
+        - libdisplay-info-dev
         - tdsodbc
         - python3-venv
         - python3-virtualenv
