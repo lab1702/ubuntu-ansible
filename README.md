@@ -63,3 +63,7 @@ Ansible configuration that can be used with Ubuntu. Currently tested on 24.04 LT
     npm config set prefix '~/.npm-global'
     echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.bashrc
     export PATH=~/.npm-global/bin:$PATH
+
+## Artillery Load Tester Setup
+
+    npm install -g artillery@latest
