@@ -39,6 +39,10 @@ Ansible configuration that can be used with Ubuntu. Currently tested on 24.04 LT
 
     curl -fsSL https://opencode.ai/install | bash
 
+## Install Rust
+
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
 ## NodeJS NPM Setup
 
 *This is needed if you want to install Artillery, Claude Code, Gemini CLI and other npm packages.*
