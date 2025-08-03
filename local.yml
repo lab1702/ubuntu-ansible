@@ -33,11 +33,6 @@
         - docker.io
         - docker-buildx
         - docker-compose-v2
-        - fonts-anonymous-pro
-        - fonts-cascadia-code
-        - fonts-firacode
-        - fonts-jetbrains-mono
-        - fonts-jetbrains-mono-web
         - git
         - gh
         - cmake
@@ -78,14 +73,6 @@
         - libpoppler-cpp-dev
         - libavfilter-dev
         - unixodbc-dev
-        - libudev-dev
-        - libseat-dev
-        - libdisplay-info-dev
-        - librust-pangocairo-sys-dev
-        - librust-libspa-sys-dev
-        - libinput-dev
-        - libxkbcommon-dev
-        - libgbm-dev
         - tdsodbc
         - python3-venv
         - python3-virtualenv
@@ -108,9 +95,6 @@
         - eza
         - tree
         - gdu
-        - wl-clipboard
-        - xclip
-        - xsel
         - neofetch
         - cpufetch
         - figlet
@@ -122,20 +106,6 @@
         - mtr-tiny
       state: present
       update_cache: true
-
-  - name: install snaps
-    snap:
-      name:
-        - ruff
-
-  - name: install classic snaps
-    snap:
-      classic: yes
-      name:
-        - nvim
-        - helix
-        - powershell
-        - astral-uv
 
   - name: install duckdb cli
     unarchive:
