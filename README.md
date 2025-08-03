@@ -10,13 +10,9 @@ Ansible configuration that can be used with Ubuntu. Currently tested on 24.04 LT
 
     sudo apt update && sudo apt upgrade -y && sudo apt install -y git ansible
 
-#### Run this to apply the config to your workstation with OS package for R
+#### Run this to apply the config to your workstation
 
     sudo ansible-pull -U https://github.com/lab1702/ubuntu-ansible.git
-
-#### Run this to apply the config to your workstation with CRAN package for R
-
-    sudo ansible-pull -U https://github.com/lab1702/ubuntu-ansible.git --extra-vars "cran=true"
 
 #### Run this if you don't want to have to sudo docker commands
 
@@ -28,13 +24,9 @@ Ansible configuration that can be used with Ubuntu. Currently tested on 24.04 LT
 
     apt update && apt upgrade -y && apt install -y git ansible
 
-#### Run this to apply the config to your workstation with OS package for R
+#### Run this to apply the config to your workstation
 
     ansible-pull -U https://github.com/lab1702/ubuntu-ansible.git
-
-#### Run this to apply the config to your workstation with CRAN package for R
-
-    ansible-pull -U https://github.com/lab1702/ubuntu-ansible.git --extra-vars "cran=true"
 
 ## Configure Edge as default browser in WSL
 
@@ -47,15 +39,9 @@ Ansible configuration that can be used with Ubuntu. Currently tested on 24.04 LT
 
     curl -fsSL https://opencode.ai/install | bash
 
-## Download RStudio
-
-    wget https://raw.githubusercontent.com/lab1702/rstudio-downloader/refs/heads/main/download-rstudio.sh
-    bash download-rstudio.sh
-    rm download-rstudio.sh
-
 ## NodeJS NPM Setup
 
-*This is needed if you want to install Claude Code, Gemini CLI and other npm packages.*
+*This is needed if you want to install Artillery, Claude Code, Gemini CLI and other npm packages.*
 
 ### Configure npm to install packages in user home directory
 
