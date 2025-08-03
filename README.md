@@ -57,3 +57,7 @@ Ansible configuration that can be used with Ubuntu. Currently tested on 24.04 LT
 ## Artillery Load Tester Setup
 
     npm install -g artillery@latest
+
+## Claude Code
+
+    npm install -g @anthropic-ai/claude-code
