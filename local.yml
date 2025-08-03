@@ -8,27 +8,9 @@
   #   debug:
   #     var: ansible_facts
 
-  - name: add cran repo key
-    get_url:
-      url: 'https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc'
-      dest: '/etc/apt/keyrings/cran_ubuntu_key.asc'
-    when: cran is defined and cran != ''
-
-  - name: add cran repo url
-    apt_repository:
-      repo: 'deb [signed-by=/etc/apt/keyrings/cran_ubuntu_key.asc] https://cloud.r-project.org/bin/linux/ubuntu {{ansible_facts.distribution_release}}-cran40/'
-      state: present
-    when: cran is defined and cran != ''
-
-  - name: update installed packages
-    apt:
-      name: "*"
-      state: latest
-      update_cache: true
-
   - name: install packages
-    apt:
-      pkg:
+    ansible.builtin.package:
+      name:
         - build-essential
         - docker.io
         - docker-buildx
@@ -105,10 +87,9 @@
         - inxi
         - mtr-tiny
       state: present
-      update_cache: true
 
   - name: install duckdb cli
-    unarchive:
+    ansible.builtin.unarchive:
       src: https://github.com/duckdb/duckdb/releases/latest/download/duckdb_cli-linux-amd64.zip
       dest: /usr/local/bin
       remote_src: yes
