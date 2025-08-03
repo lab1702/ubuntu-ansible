@@ -53,8 +53,3 @@ Ansible configuration that can be used with Ubuntu. Currently tested on 24.04 LT
 ## Artillery Load Tester Setup
 
     npm install -g artillery@latest
-
-## Use R package binaires for Ubuntu 24.04 LTS
-
-    echo 'options(repos = c(CRAN = "https://p3m.dev/cran/__linux__/noble/latest"))' > ~/.Rprofile
-    echo 'options(pkgType = "binary")' >> ~/.Rprofile
