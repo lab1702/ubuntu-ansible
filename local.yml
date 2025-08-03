@@ -87,6 +87,7 @@
         - inxi
         - mtr-tiny
       state: present
+      update_cache: true
 
   - name: install duckdb cli
     ansible.builtin.unarchive:
