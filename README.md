@@ -4,7 +4,7 @@ Ansible configuration that can be used with Ubuntu. Currently tested on 24.04 LT
 
 ## Complete Workstation Setup
 
-### Ansible Commands for non-root users
+### Option 1: Ansible Commands for non-root users
 
 #### Run this once after installing the OS
 
@@ -18,7 +18,7 @@ Ansible configuration that can be used with Ubuntu. Currently tested on 24.04 LT
 
     sudo usermod -aG docker $USER
 
-### Ansible Commands for root users
+### Option 2: Ansible Commands for root users
 
 #### Run this once after installing the OS
 
@@ -28,22 +28,22 @@ Ansible configuration that can be used with Ubuntu. Currently tested on 24.04 LT
 
     ansible-pull -U https://github.com/lab1702/ubuntu-ansible.git
 
-## Configure Edge as default browser in WSL
+## WSL: Configure Edge as Default Browser
 
 ***Only on WSL!***
 
     sudo update-alternatives --install /usr/bin/x-www-browser x-www-browser "/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe" 200
     sudo update-alternatives --config x-www-browser
 
-## Install OpenCode
+## OpenCode
 
     curl -fsSL https://opencode.ai/install | bash
 
-## Install Rust
+## Rust
 
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
-## NodeJS NPM Setup
+## NodeJS
 
 *This is needed if you want to install Artillery, Claude Code, Gemini CLI and other npm packages.*
 
@@ -54,7 +54,7 @@ Ansible configuration that can be used with Ubuntu. Currently tested on 24.04 LT
     echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.bashrc
     export PATH=~/.npm-global/bin:$PATH
 
-## Artillery Load Tester Setup
+## Artillery Load Tester
 
     npm install -g artillery@latest
 
