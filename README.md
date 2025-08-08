@@ -62,6 +62,10 @@ Ansible configuration that can be used with Ubuntu. Currently tested on 24.04 LT
 
     npm install -g @anthropic-ai/claude-code
 
+## Codex CLI
+
+    npm install -g @openai/codex
+
 ## Gemini CLI
 
     npm install -g @google/gemini-cli
