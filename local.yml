@@ -12,6 +12,7 @@
     ansible.builtin.package:
       name:
         - build-essential
+        - emscripten
         - docker.io
         - docker-buildx
         - docker-compose-v2
